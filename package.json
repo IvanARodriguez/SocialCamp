@@ -19,6 +19,7 @@
     "mapbox-gl": "^1.10.0",
     "method-override": "^3.0.0",
     "moment": "^2.24.0",
+    "mongodb": "^4.4.0",
     "mongoose": "^5.9.7",
     "node-geocoder": "^3.27.0",
     "passport": "^0.4.1",

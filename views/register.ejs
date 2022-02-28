@@ -4,26 +4,26 @@
 	<h1 class="justify-content-center mt-5">Register</h1>
 	
 	<form action="/register" method="POST">
-		<div class="form-group">
+		<div class="form-group mb-3">
 			<label for="loginEmailInput">Username</label>
 			<input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" name="username" placeholder="Username">
 			<small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
 		</div>
 
-	  	<div class="form-group">
+	  	<div class="form-group mb-3">
 			<label for="eloginPasswordInput">Password</label>
 			<input class="form-control" id="exampleInputPassword1" type="password" name="password" placeholder="password">
 	  	</div>
 		
-		<div class="form-group">
+		<div class="form-group mb-3">
 			<label for="loginAdminInput">Administrator</label>
 			<input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" name="adminCode" placeholder="Admin Code">
 	  	</div>
 		
-	  	<button class="btn btn-info btn-lg btn-block">register</button>
+	  	<button class="btn btn-info btn-lg">register</button>
 	</form>
 	
-	<p> Already registered? <a href="/login">login</a></p>
+	<p> Already registered? <a href="/login" class="">login</a></p>
 </div>
 
 <%- include ("./partials/footer") -%>

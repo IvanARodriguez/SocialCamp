@@ -50,7 +50,7 @@ router.post("/", isLoggedIn, (req, res) => {
 		// create a new campground and save to the database...
 		Campground.create(newCampground, (err, newlyCreated)=>{
 			if(err){
-				cosnole.log(err);
+				console.log(err);
 			} else {
 				//redirect back to campgrounds page
 				res.redirect("/campgrounds");
