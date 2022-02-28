@@ -1,0 +1,69 @@
+.img-thumbnail{
+	padding: 0;
+}
+nav{
+	margin-bottom: 2em !important;
+}
+.img-fluid{
+	width: 100%;
+}
+.caption-full{
+	padding: 9px;
+}
+a{
+	text-decoration: none;
+}
+a.light{
+	color: 
+}
+.bg-dark{
+	background-color: black!important;
+}
+a:hover{
+	text-decoration: none;
+	color: white;
+}
+#hero-image{
+	padding-top: 15%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("https://free4kwallpapers.com/uploads/originals/2015/10/22/red-rocky-mountains-wallpaper.jpg");
+	color: white;
+	height: 100vh;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.search{
+	margin: 25px;
+}
+.form-inline .form-control {
+	width: 70%;
+}
+.loginWidth{
+	max-width: 500px;
+}
+.signature{
+	font-size: 16px;
+	color: grey;
+}
+.delete-form{
+	display: inline;
+}
+.input-delete{
+	background: none;
+	border: none;
+}
+.pay-col{
+	margin-top: 10vh;
+}
+#card-element{
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	padding: 15px;
+	box-shadow: 2px 2px 5px #BFCFD9;
+}
+/* Google maps */
+#map{
+	height: 400px;
+	width: 100%;
+}
