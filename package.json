@@ -22,6 +22,7 @@
     "mongodb": "^4.4.1",
     "mongoose": "^5.13.14",
     "node-geocoder": "^3.27.0",
+    "nodemon": "^2.0.15",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.0.1",
