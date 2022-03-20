@@ -1,6 +1,6 @@
 var express = require("express");
 var router  = express.Router();
-var Campground = require("../models/campground");
+var Campground = require("../models/campground").default;
 var { checkCampgroundOwnership, isLoggedIn, isPaid} = require("../middleware");
 
 var NodeGeocoder = require('node-geocoder');

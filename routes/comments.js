@@ -1,6 +1,6 @@
 let express = require("express");
 let router 	= express.Router({mergeParams: true});
-let Campground = require("../models/campground");
+let Campground = require("../models/campground").default;
 let Comment = require("../models/comment");
 let {checkCommentOwnership, isLoggedIn, isPaid} = require("../middleware");
 router.use(isLoggedIn, isPaid);

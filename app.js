@@ -8,7 +8,7 @@ let express 			= require("express"),
 	passport			= require("passport"),
 	LocalStrategy		= require("passport-local"),
 	methodOverride		= require("method-override"),
-	Campground			= require("./models/campground"),
+	Campground			= require("./models/campground").default,
 	Comment				= require("./models/comment"),
 	User				= require("./models/user"),
 	seedDB				= require("./seeds")
@@ -17,7 +17,7 @@ let commentRoutes 		= require("./routes/comments"),
 	campgroundRoutes 	= require("./routes/campgrounds"),
 	indexRoutes 		= require("./routes/index");
 
-mongoose.connect("mongodb://localhost/27017",{
+mongoose.connect("mongodb://localhost/socialcampDB",{
 					useUnifiedTopology: true,
 					useNewUrlParser: true,
 					useFindAndModify: false,
@@ -29,7 +29,7 @@ app.use(express.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
-// seedDB(); // seed the database
+seedDB(); // seed the database
 
 //PASSPORT CONFIGURATION
 app.use(require("express-session")({

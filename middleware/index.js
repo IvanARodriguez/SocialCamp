@@ -1,4 +1,4 @@
-let Campground = require("../models/campground");
+let Campground = require("../models/campground").default;
 let Comment = require("../models/comment");
 
 //all middleware goes here
@@ -40,7 +40,7 @@ middlewareObj.checkCommentOwnership = (req, res, next)=>{
 			if(foundComment.author.id.equals(req.user._id)){
 				next();
 			} else {
-				req.flash("error", "You don't have permision to do that!");
+				req.flash("error", "You don't have permission to do that!");
 				res.redirect("back");
 			}
 		}
